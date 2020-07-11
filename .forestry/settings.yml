@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: _posts/about.md
+  label: About
+  match: "**/*"
+  read_only: true
 - type: heading
   label: Content
 - type: directory
@@ -21,16 +26,6 @@ sections:
   match: "*.md"
 - type: heading
   label: Collections
-- type: directory
-  path: _recipes
-  label: Recipes
-  create: documents
-  match: "*.md"
-- type: directory
-  path: _pets
-  label: Pets
-  create: documents
-  match: "*.md"
 - type: heading
   label: Jekyll
 - type: document
